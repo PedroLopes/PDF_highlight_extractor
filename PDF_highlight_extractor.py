@@ -1,6 +1,6 @@
 import fitz  # PyMuPDF
 from PySide6.QtCore import Qt, QThread, Signal
-
+import numpy as np
 
 class HighlightExtractorThread(QThread):
     progress = Signal(int, int)  # current, total
